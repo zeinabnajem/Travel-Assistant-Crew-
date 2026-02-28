@@ -1,23 +1,49 @@
 # Travelassistant Crew
 
-Welcome to the Travelassistant Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
+Welcome to the **TravelAssistant Crew** project, powered by [crewAI](https://crewai.com).
+This project demonstrates how to build a **multi-agent AI travel assistant** where specialized agents collaborate to help users:
+- ✈️ Find flight options  
+- 🏨 Suggest hotels  
+- 🗺️ Plan personalized tours  
+- 💡 Provide expert travel advice  
+The system is modular, extensible, and ready to integrate with real-world APIs.
+
+# 🧠 Multi-Agent Architecture
+
+The TravelAssistant Crew includes four specialized agents:
+
+### ✈️ Flight Agent
+Recommends flights based on user preferences (currently using dummy data).
+
+### 🏨 Hotel Agent
+Suggests accommodations with amenities, location details, and pricing.
+
+### 🗺️ Tour Agent
+Creates personalized tour itineraries tailored to the destination.
+
+### 💡 Advisor Agent
+Provides cultural insights, travel tips, and useful recommendations.
+
+Each agent has:
+- A defined **role**
+- A clear **goal**
+- A detailed **backstory**
+- Assigned **tasks**
+
+All configurations are defined in YAML files.
+
+
 
 ## Installation
 
-Ensure you have Python >=3.10 <3.14 installed on your system. This project uses [UV](https://docs.astral.sh/uv/) for dependency management and package handling, offering a seamless setup and execution experience.
+Ensure you have:
 
-First, if you haven't already, install uv:
+- Python >= 3.10 and < 3.14
 
 ```bash
-pip install uv
+pip install -r requirements.txt
 ```
 
-Next, navigate to your project directory and install the dependencies:
-
-(Optional) Lock the dependencies and install them by using the CLI command:
-```bash
-crewai install
-```
 ### Customizing
 
 **Add your `OPENAI_API_KEY` into the `.env` file**
@@ -39,16 +65,7 @@ This command initializes the TravelAssistant Crew, assembling the agents and ass
 
 This example, unmodified, will run the create a `report.md` file with the output of a research on LLMs in the root folder.
 
-## Understanding Your Crew
 
-The TravelAssistant Crew is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in `config/tasks.yaml`, leveraging their collective skills to achieve complex objectives. The `config/agents.yaml` file outlines the capabilities and configurations of each agent in your crew.
-
-## Support
-
-For support, questions, or feedback regarding the Travelassistant Crew or crewAI.
-- Visit our [documentation](https://docs.crewai.com)
-- Reach out to us through our [GitHub repository](https://github.com/joaomdmoura/crewai)
-- [Join our Discord](https://discord.com/invite/X4JWnZnxPb)
 - [Chat with our docs](https://chatg.pt/DWjSBZn)
 
 Let's create wonders together with the power and simplicity of crewAI.
