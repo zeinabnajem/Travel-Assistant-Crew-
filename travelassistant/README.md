@@ -66,6 +66,3 @@ This command initializes the TravelAssistant Crew, assembling the agents and ass
 This example, unmodified, will run the create a `report.md` file with the output of a research on LLMs in the root folder.
 
 
-- [Chat with our docs](https://chatg.pt/DWjSBZn)
-
-Let's create wonders together with the power and simplicity of crewAI.
