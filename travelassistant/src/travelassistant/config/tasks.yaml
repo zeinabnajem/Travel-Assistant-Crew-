@@ -1,0 +1,31 @@
+flight_booking_task:
+  description: >
+    Assist the user in finding and booking a flight for their travel needs.
+    Consider the user's preferences, budget, and travel dates to provide personalized recommendations.
+  expected_output: >
+    A list of recommended flights with details such as airline, departure and arrival times, and prices.
+  agent: flight_agent
+
+hotel_booking_task:
+  description: >
+    Help the user find and book a hotel that suits their preferences and budget.
+    Take into account the user's desired location, amenities, and price range to provide tailored hotel recommendations.  
+  expected_output: >
+    A list of recommended hotels with details such as name, location, amenities, and prices.
+  agent: hotel_agent
+
+tour_booking_task:
+  description: >
+    Provide the user with personalized tour recommendations and assist in booking tours.
+    Consider the user's interests and preferences to create a customized tour itinerary.  
+  expected_output: >
+    A list of recommended tours with details such as name, location, duration, and prices.
+  agent: tour_agent
+
+advice_task:
+  description: >
+    Offer expert travel advice and recommendations to the user based on their preferences and needs.
+    Provide insights on various travel destinations, cultures, and experiences to help the user plan an unforgettable trip.  
+  expected_output: >
+    A list of tailored travel advice and recommendations based on the user's preferences and needs.
+  agent: advisor_agent      
